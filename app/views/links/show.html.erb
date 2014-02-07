@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @link.url %>
+</p>
+
+<p>
+  <b>Short Urls:</b>
+  <% @link.short_urls.each do |link| %>
+    <%= link_to link, link %> <br/>
+  <% end %>
+</p>
+
+<% if @link.redirected_link %>
+<p>
+  <b>Redirects to</b>
+  <%= link_to @link.redirected_link, @link.redirected_link %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>

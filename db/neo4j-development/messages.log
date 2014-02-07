@@ -1,0 +1,1688 @@
+2014-02-03 02:56:47.326+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-02-03 02:56:47.327+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=145M
+    neostore.nodestore.db.mapped_memory=40M
+    identity_map=true
+    timestamps=true
+    neostore.relationshipstore.db.mapped_memory=177M
+    neostore.propertystore.db.strings.mapped_memory=123M
+    store_dir=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+    online_backup_enabled=false
+    neostore.propertystore.db.arrays.mapped_memory=140M
+    migration_thread=false
+    enable_rules=true
+    storage_path=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+2014-02-03 02:56:47.333+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2014-02-03 02:56:47.333+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 1.83 GB
+    Free Physical memory: 797.88 MB
+    Committed virtual memory: 1.29 GB
+    Total swap space: 3.94 GB
+    Free swap space: 3.94 GB
+2014-02-03 02:56:47.347+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 31.01 MB
+    Total memory: 88.91 MB
+    Max   memory: 483.38 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=3.63 MB, used=3.46 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=24.56 MB, used=1.71 MB, max=133.38 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=3.06 MB, used=2.47 MB, max=16.63 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=61.29 MB, used=53.72 MB, max=333.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=37.31 MB, used=37.26 MB, max=82.00 MB, threshold=0.00 B
+2014-02-03 02:56:47.376+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.32-431.el6.x86_64; arch: amd64; cpus: 1
+    Max number of file descriptors: 4096
+    Number of open file descriptors: 51
+    Process id: 3275@localhost
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Taipei
+2014-02-03 02:56:47.449+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.51-b03
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Djdk.home=, -Djruby.home=/usr/local/rvm/rubies/jruby-1.7.10, -Djruby.script=jruby, -Djruby.shell=/bin/sh, -Djffi.boot.library.path=/usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux, -Xmx500m, -Xss2048k, -Xbootclasspath/a:/usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar]
+2014-02-03 02:56:47.451+0000 INFO  [org.neo4j]: Java classpath:
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/dnsns.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcprov-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/activerecord-jdbc-adapter-1.3.5/lib/arjdbc/jdbc/adapter_java.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptcore.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/zipfs.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/therubyrhino_jar-1.7.4/jar/rhino-1.7R4.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jdbc-sqlite3-3.7.2.1/lib/sqlite-jdbc-3.7.2.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptproviderjdk.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/geronimo-jta_1.1_spec-1.1.1.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/sunrsasign.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/scala-library-2.10.0.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-lucene-index-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-kernel-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/rt.jar
+     [classpath + loader.1] file:/root/Aptana_Studio_3/workspace/kvitter/
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-cypher-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jruby-openssl-0.9.4/lib/jopenssl.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/parser.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunpkcs11.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunjce_provider.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/generator.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/server-api-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/resources.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-udc-1.9.5.jar
+     [bootstrap] /usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcpkix-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-matching-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jfr.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jsse.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunec.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/localedata.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-jmx-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-algo-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/charsets.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/classes
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jce.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-core-2.3.0-java/lib/neo4j-core/jars/neo4jrb-adaptor.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/lucene-core-3.6.2.jar
+2014-02-03 02:56:47.453+0000 INFO  [org.neo4j]: Library path:
+    /usr/jdk/jdk1.7.0_51/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+2014-02-03 02:56:47.453+0000 INFO  [org.neo4j]: System.properties:
+    jruby.home = /usr/local/rvm/rubies/jruby-1.7.10
+    sun.boot.library.path = /usr/jdk/jdk1.7.0_51/jre/lib/amd64
+    path.separator = :
+    file.encoding.pkg = sun.io
+    user.country = US
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = unknown
+    user.dir = /root/Aptana_Studio_3/workspace/kvitter
+    neo4j.ext.udc.source = neo4rb
+    jdk.home = 
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    jffi.boot.library.path = /usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux
+    user.home = /root
+    user.timezone = Asia/Taipei
+    file.encoding = UTF-8
+    jruby.script = jruby
+    user.name = root
+    jruby.shell = /bin/sh
+    sun.java.command = org/jruby/Main script/rails s
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.X11.XToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+2014-02-03 02:56:47.454+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop anticipatory deadline [cfq] 
+    noop anticipatory deadline [cfq] 
+    none
+    none
+2014-02-03 02:56:47.458+0000 INFO  [org.neo4j]: Network information:
+    Interface eth0:
+        address: fe80:0:0:0:a00:27ff:fe09:ec21%2
+        address: 10.0.2.15
+    Interface lo:
+        address: 0:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2014-02-03 02:56:47.461+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-02-03 02:56:47.706+0000 INFO  [org.neo4j]: Creating new db @ /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore
+2014-02-03 02:56:47.817+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db] brickCount=0 brickSize=419427b mappedMem=41943040b (storeSize=0b)
+2014-02-03 02:56:47.827+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db hit=1 miss=0 switches=0 ooe=0
+2014-02-03 02:56:47.953+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-03 02:56:47.960+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-03 02:56:47.966+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:47.980+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:47.989+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-03 02:56:47.989+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-03 02:56:47.990+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings] brickCount=0 brickSize=128896b mappedMem=128974848b (storeSize=128b)
+2014-02-03 02:56:47.990+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-03 02:56:47.992+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-03 02:56:47.994+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays] brickCount=0 brickSize=146688b mappedMem=146800640b (storeSize=128b)
+2014-02-03 02:56:47.998+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db] brickCount=0 brickSize=1520403b mappedMem=152043520b (storeSize=0b)
+2014-02-03 02:56:48.000+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db] brickCount=0 brickSize=1855953b mappedMem=185597952b (storeSize=0b)
+2014-02-03 02:56:48.000+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db] brickCount=0 brickSize=41940b mappedMem=41943040b (storeSize=9b)
+2014-02-03 02:56:48.002+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-03 02:56:48.016+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.028+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.039+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.049+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.059+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.072+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.085+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.095+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.106+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-03 02:56:48.122+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore hit=0 miss=8 switches=0 ooe=0
+2014-02-03 02:56:48.134+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-03 02:56:48.135+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-03 02:56:48.135+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings] brickCount=0 brickSize=128896b mappedMem=128974848b (storeSize=128b)
+2014-02-03 02:56:48.135+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-03 02:56:48.135+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-03 02:56:48.135+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays] brickCount=0 brickSize=146688b mappedMem=146800640b (storeSize=128b)
+2014-02-03 02:56:48.136+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db] brickCount=0 brickSize=1520403b mappedMem=152043520b (storeSize=0b)
+2014-02-03 02:56:48.136+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db] brickCount=0 brickSize=1855953b mappedMem=185597952b (storeSize=0b)
+2014-02-03 02:56:48.137+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db] brickCount=0 brickSize=41940b mappedMem=41943040b (storeSize=9b)
+2014-02-03 02:56:48.138+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-02-03 02:56:48.162+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2014-02-03 02:56:48.178+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2014-02-03 02:56:48.706+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log.1] version=0, lastTxId=1 (clean)
+2014-02-03 02:56:48.720+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-02-03 02:56:48.720+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1391396207706, id:-3116084349435812522, store version: 13561656364791302]
+2014-02-03 02:56:48.721+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 02:56:48.721+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-02-03 02:56:48.721+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 02:56:48.721+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-02-03 02:56:48.726+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-02-03 02:56:48.727+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2014-02-03 02:56:48.727+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-02-03 02:56:48.727+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-02-03 02:56:48.727+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=1 high=0
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2014-02-03 02:56:48.727+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-02-03 02:56:48.728+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-02-03 02:56:48.728+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-02-03 02:56:48.729+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-02-03 02:56:48.730+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 16455757824 / 7397273600 / 44
+Storage files: (filename : modification date - size)
+      tm_tx_log.1: 2014-02-03T10:56:48+0800 - 0.00 B
+      neostore.relationshipstore.db: 2014-02-03T10:56:48+0800 - 0.00 B
+      neostore.relationshiptypestore.db.names: 2014-02-03T10:56:48+0800 - 38.00 B
+      neostore: 2014-02-03T10:56:48+0800 - 54.00 B
+      neostore.propertystore.db.index: 2014-02-03T10:56:48+0800 - 0.00 B
+      messages.log: 2014-02-03T10:56:48+0800 - 17.78 kB
+      neostore.propertystore.db.index.keys.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-02-03T10:56:48+0800 - 38.00 B
+      lock: 2014-02-03T10:56:48+0800 - 0.00 B
+      neostore.relationshiptypestore.db: 2014-02-03T10:56:48+0800 - 0.00 B
+      neostore.propertystore.db.arrays.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      index:
+        lucene.log.active: 2014-02-03T10:56:48+0800 - 4.00 B
+        lucene.log.1: 2014-02-03T10:56:48+0800 - 16.00 B
+        lucene-store.db: 2014-02-03T10:56:48+0800 - 40.00 B
+      - Total: 2014-02-03T10:56:48+0800 - 60.00 B
+      neostore.propertystore.db.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      neostore.propertystore.db.strings: 2014-02-03T10:56:48+0800 - 128.00 B
+      neostore.nodestore.db: 2014-02-03T10:56:48+0800 - 9.00 B
+      nioneo_logical.log.1: 2014-02-03T10:56:48+0800 - 16.00 B
+      neostore.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      neostore.propertystore.db: 2014-02-03T10:56:48+0800 - 0.00 B
+      store_lock: 2014-02-03T10:56:47+0800 - 0.00 B
+      active_tx_log: 2014-02-03T10:56:48+0800 - 11.00 B
+      neostore.propertystore.db.arrays: 2014-02-03T10:56:48+0800 - 128.00 B
+      neostore.relationshiptypestore.db.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      neostore.relationshipstore.db.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      neostore.propertystore.db.index.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      neostore.nodestore.db.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-02-03T10:56:48+0800 - 9.00 B
+      nioneo_logical.log.active: 2014-02-03T10:56:48+0800 - 4.00 B
+      neostore.propertystore.db.strings.id: 2014-02-03T10:56:48+0800 - 9.00 B
+2014-02-03 02:56:48.738+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-02-03 02:56:48.744+0000 INFO  [org.neo4j]: Database is now ready
+2014-02-03 02:56:48.747+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-02-03 02:58:13.398+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 261ms [total block time: 0.261s]
+2014-02-03 02:59:45.367+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 411ms [total block time: 0.672s]
+2014-02-03 03:21:08.489+0000 INFO  [org.neo4j]: Shutdown started
+2014-02-03 03:21:08.490+0000 INFO  [org.neo4j]: Database is no longer ready
+2014-02-03 03:21:08.490+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2014-02-03 03:21:08.519+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log
+2014-02-03 03:21:08.525+0000 INFO  [org.neo4j]: TM shutting down
+2014-02-03 03:21:08.550+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log
+2014-02-03 03:21:08.566+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names hit=0 miss=1 switches=0 ooe=0
+2014-02-03 03:21:08.577+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db hit=0 miss=1 switches=0 ooe=0
+2014-02-03 03:21:08.589+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-02-03 03:21:08.603+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2014-02-03 03:21:08.618+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2014-02-03 03:21:08.635+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-03 03:21:08.649+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-03 03:21:08.661+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db hit=1 miss=0 switches=0 ooe=0
+2014-02-03 03:21:08.674+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db hit=6 miss=0 switches=0 ooe=0
+2014-02-03 03:21:08.684+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore hit=0 miss=18 switches=0 ooe=0
+2014-02-03 03:21:08.695+0000 INFO  [org.neo4j]: NeoStore closed
+2014-02-03 03:21:08.695+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2014-02-03 03:21:08.695+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
+2014-02-03 06:18:58.644+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-02-03 06:18:58.648+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=145M
+    neostore.nodestore.db.mapped_memory=40M
+    identity_map=true
+    timestamps=true
+    neostore.relationshipstore.db.mapped_memory=177M
+    neostore.propertystore.db.strings.mapped_memory=123M
+    store_dir=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+    online_backup_enabled=false
+    neostore.propertystore.db.arrays.mapped_memory=140M
+    migration_thread=false
+    enable_rules=true
+    storage_path=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+2014-02-03 06:18:58.665+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2014-02-03 06:18:58.666+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 1.83 GB
+    Free Physical memory: 186.45 MB
+    Committed virtual memory: 1.30 GB
+    Total swap space: 3.94 GB
+    Free swap space: 3.94 GB
+2014-02-03 06:18:58.684+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 16.54 MB
+    Total memory: 97.78 MB
+    Max   memory: 483.38 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=3.81 MB, used=3.69 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=27.00 MB, used=19.01 MB, max=133.38 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=3.38 MB, used=2.11 MB, max=16.63 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=67.40 MB, used=60.53 MB, max=333.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=38.00 MB, used=37.82 MB, max=82.00 MB, threshold=0.00 B
+2014-02-03 06:18:58.690+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.32-431.el6.x86_64; arch: amd64; cpus: 1
+    Max number of file descriptors: 4096
+    Number of open file descriptors: 89
+    Process id: 6902@localhost
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Taipei
+2014-02-03 06:18:58.735+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.51-b03
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Djdk.home=, -Djruby.home=/usr/local/rvm/rubies/jruby-1.7.10, -Djruby.script=jruby, -Djruby.shell=/bin/sh, -Djffi.boot.library.path=/usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux, -Xmx500m, -Xss2048k, -Xbootclasspath/a:/usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar]
+2014-02-03 06:18:58.736+0000 INFO  [org.neo4j]: Java classpath:
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcprov-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/activerecord-jdbc-adapter-1.3.5/lib/arjdbc/jdbc/adapter_java.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/zipfs.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/geronimo-jta_1.1_spec-1.1.1.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/sunrsasign.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-lucene-index-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-kernel-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/rt.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-cypher-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/parser.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunpkcs11.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunjce_provider.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/generator.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/server-api-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/resources.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-udc-1.9.5.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/log4j-over-slf4j-1.6.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-cypher-1.8.3.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jsse.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunec.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-jmx-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/scala-library-2.9.1-1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/thread_safe-0.1.3-java/lib/thread_safe/jruby_cache_backend.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-udc-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/lucene-core-3.6.2.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/dnsns.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-kernel-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-shell-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptcore.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/therubyrhino_jar-1.7.4/jar/rhino-1.7R4.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jdbc-sqlite3-3.7.2.1/lib/sqlite-jdbc-3.7.2.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptproviderjdk.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/http_parser.rb-0.6.0-java/lib/ruby_http_parser.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/server-api-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-matching-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/scala-library-2.10.0.jar
+     [classpath + loader.1] file:/root/Aptana_Studio_3/workspace/kvitter/
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-lucene-index-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/lucene-core-3.5.0.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jruby-openssl-0.9.4/lib/jopenssl.jar
+     [bootstrap] /usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcpkix-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-matching-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jfr.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-algo-1.8.3.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/localedata.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-jmx-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-algo-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/charsets.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/classes
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jce.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-core-2.3.0-java/lib/neo4j-core/jars/neo4jrb-adaptor.jar
+2014-02-03 06:18:58.740+0000 INFO  [org.neo4j]: Library path:
+    /usr/jdk/jdk1.7.0_51/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+2014-02-03 06:18:58.740+0000 INFO  [org.neo4j]: System.properties:
+    jruby.home = /usr/local/rvm/rubies/jruby-1.7.10
+    sun.boot.library.path = /usr/jdk/jdk1.7.0_51/jre/lib/amd64
+    path.separator = :
+    file.encoding.pkg = sun.io
+    user.country = US
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = unknown
+    user.dir = /root/Aptana_Studio_3/workspace/kvitter
+    neo4j.ext.udc.source = neo4rb
+    jdk.home = 
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    jffi.boot.library.path = /usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux
+    user.home = /root
+    user.timezone = Asia/Taipei
+    file.encoding = UTF-8
+    jruby.script = jruby
+    user.name = root
+    jruby.shell = /bin/sh
+    sun.java.command = org/jruby/Main script/rails s
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.X11.XToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+2014-02-03 06:18:58.741+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop anticipatory deadline [cfq] 
+    noop anticipatory deadline [cfq] 
+    none
+    none
+2014-02-03 06:18:58.750+0000 INFO  [org.neo4j]: Network information:
+    Interface eth2:
+        address: fe80:0:0:0:a00:27ff:fe9b:d63c%3
+        address: 10.0.3.15
+    Interface eth0:
+        address: fe80:0:0:0:a00:27ff:fe09:ec21%2
+        address: 192.168.56.101
+    Interface lo:
+        address: 0:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2014-02-03 06:18:58.752+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-02-03 06:18:59.541+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=76b)
+2014-02-03 06:18:59.552+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=5b)
+2014-02-03 06:18:59.554+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings] brickCount=0 brickSize=128896b mappedMem=128974848b (storeSize=128b)
+2014-02-03 06:18:59.554+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-03 06:18:59.557+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-03 06:18:59.559+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays] brickCount=0 brickSize=146688b mappedMem=146800640b (storeSize=128b)
+2014-02-03 06:18:59.564+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db] brickCount=0 brickSize=1520403b mappedMem=152043520b (storeSize=0b)
+2014-02-03 06:18:59.568+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db] brickCount=0 brickSize=185592b mappedMem=185597952b (storeSize=33b)
+2014-02-03 06:18:59.571+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db] brickCount=0 brickSize=41940b mappedMem=41943040b (storeSize=18b)
+2014-02-03 06:18:59.571+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-02-03 06:18:59.640+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log.1] version=1, lastTxId=3 (clean)
+2014-02-03 06:18:59.695+0000 INFO  [org.neo4j]: TM opening log: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/tm_tx_log.1
+2014-02-03 06:18:59.831+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log.1] version=1, lastTxId=1 (clean)
+2014-02-03 06:18:59.851+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-02-03 06:18:59.851+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1391396207706, id:-3116084349435812522, store version: 13561656364791302]
+2014-02-03 06:18:59.851+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 06:18:59.851+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-02-03 06:18:59.854+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 06:18:59.855+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-02-03 06:18:59.861+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-02-03 06:18:59.865+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2014-02-03 06:18:59.866+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-02-03 06:18:59.866+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-02-03 06:18:59.866+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=2 high=1
+      RelationshipStore: used=1 high=0
+      RelationshipTypeStore: used=1 high=0
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2014-02-03 06:18:59.867+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-02-03 06:18:59.867+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-02-03 06:18:59.867+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-02-03 06:18:59.867+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-02-03 06:18:59.867+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 16455757824 / 7248027648 / 44
+Storage files: (filename : modification date - size)
+      tm_tx_log.1: 2014-02-03T14:18:59+0800 - 0.00 B
+      neostore.relationshipstore.db: 2014-02-03T14:18:59+0800 - 33.00 B
+      neostore.relationshiptypestore.db.names: 2014-02-03T14:18:59+0800 - 76.00 B
+      neostore: 2014-02-03T14:18:59+0800 - 54.00 B
+      neostore.propertystore.db.index: 2014-02-03T14:18:59+0800 - 0.00 B
+      messages.log: 2014-02-03T14:18:59+0800 - 38.05 kB
+      nioneo_logical.log.v0: 2014-02-03T11:21:08+0800 - 370.00 B
+      neostore.propertystore.db.index.keys.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-02-03T14:18:59+0800 - 38.00 B
+      lock: 2014-02-03T14:18:59+0800 - 0.00 B
+      neostore.relationshiptypestore.db: 2014-02-03T14:18:59+0800 - 5.00 B
+      neostore.propertystore.db.arrays.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      index:
+        lucene.log.active: 2014-02-03T14:18:59+0800 - 4.00 B
+        lucene.log.1: 2014-02-03T14:18:59+0800 - 16.00 B
+        lucene.log.v0: 2014-02-03T11:21:08+0800 - 16.00 B
+        lucene-store.db: 2014-02-03T11:21:08+0800 - 40.00 B
+      - Total: 2014-02-03T14:18:59+0800 - 76.00 B
+      neostore.propertystore.db.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      neostore.propertystore.db.strings: 2014-02-03T14:18:59+0800 - 128.00 B
+      neostore.nodestore.db: 2014-02-03T14:18:59+0800 - 18.00 B
+      nioneo_logical.log.1: 2014-02-03T14:18:59+0800 - 16.00 B
+      neostore.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      neostore.propertystore.db: 2014-02-03T14:18:59+0800 - 0.00 B
+      store_lock: 2014-02-03T10:56:47+0800 - 0.00 B
+      active_tx_log: 2014-02-03T10:56:48+0800 - 11.00 B
+      neostore.propertystore.db.arrays: 2014-02-03T14:18:59+0800 - 128.00 B
+      neostore.relationshiptypestore.db.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      neostore.relationshipstore.db.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      neostore.propertystore.db.index.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      neostore.nodestore.db.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-02-03T14:18:59+0800 - 9.00 B
+      nioneo_logical.log.active: 2014-02-03T14:18:59+0800 - 4.00 B
+      neostore.propertystore.db.strings.id: 2014-02-03T14:18:59+0800 - 9.00 B
+2014-02-03 06:18:59.877+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-02-03 06:18:59.887+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-02-03 06:18:59.906+0000 INFO  [org.neo4j]: Database is now ready
+2014-02-03 06:19:49.079+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 320ms [total block time: 0.32s]
+2014-02-03 06:48:50.362+0000 INFO  [org.neo4j]: Shutdown started
+2014-02-03 06:48:50.363+0000 INFO  [org.neo4j]: Database is no longer ready
+2014-02-03 06:48:50.363+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2014-02-03 06:48:50.557+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log
+2014-02-03 06:48:50.574+0000 INFO  [org.neo4j]: TM shutting down
+2014-02-03 06:48:50.596+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log
+2014-02-03 06:48:50.661+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names hit=0 miss=5 switches=0 ooe=0
+2014-02-03 06:48:50.673+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db hit=0 miss=4 switches=0 ooe=0
+2014-02-03 06:48:50.703+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-02-03 06:48:50.711+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys hit=0 miss=7 switches=0 ooe=0
+2014-02-03 06:48:50.722+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index hit=0 miss=7 switches=0 ooe=0
+2014-02-03 06:48:50.734+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-03 06:48:50.745+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db hit=10 miss=0 switches=0 ooe=0
+2014-02-03 06:48:50.761+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db hit=17 miss=0 switches=0 ooe=0
+2014-02-03 06:48:50.834+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db hit=22 miss=0 switches=0 ooe=0
+2014-02-03 06:48:50.859+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore hit=0 miss=24 switches=0 ooe=0
+2014-02-03 06:48:50.867+0000 INFO  [org.neo4j]: NeoStore closed
+2014-02-03 06:48:50.867+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2014-02-03 06:48:50.868+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
+2014-02-03 06:50:21.229+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-02-03 06:50:21.233+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=145M
+    neostore.nodestore.db.mapped_memory=40M
+    identity_map=true
+    timestamps=true
+    neostore.relationshipstore.db.mapped_memory=177M
+    neostore.propertystore.db.strings.mapped_memory=123M
+    store_dir=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+    online_backup_enabled=false
+    neostore.propertystore.db.arrays.mapped_memory=140M
+    migration_thread=false
+    enable_rules=true
+    storage_path=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+2014-02-03 06:50:21.240+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2014-02-03 06:50:21.242+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 1.83 GB
+    Free Physical memory: 197.48 MB
+    Committed virtual memory: 1.30 GB
+    Total swap space: 3.94 GB
+    Free swap space: 3.94 GB
+2014-02-03 06:50:21.252+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 10.92 MB
+    Total memory: 96.98 MB
+    Max   memory: 483.38 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=3.75 MB, used=3.50 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=26.81 MB, used=23.85 MB, max=133.38 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=3.31 MB, used=2.09 MB, max=16.63 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=66.85 MB, used=60.11 MB, max=333.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=38.06 MB, used=37.83 MB, max=82.00 MB, threshold=0.00 B
+2014-02-03 06:50:21.261+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.32-431.el6.x86_64; arch: amd64; cpus: 1
+    Max number of file descriptors: 4096
+    Number of open file descriptors: 89
+    Process id: 8240@localhost
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Taipei
+2014-02-03 06:50:21.310+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.51-b03
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Djdk.home=, -Djruby.home=/usr/local/rvm/rubies/jruby-1.7.10, -Djruby.script=jruby, -Djruby.shell=/bin/sh, -Djffi.boot.library.path=/usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux, -Xmx500m, -Xss2048k, -Xbootclasspath/a:/usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar]
+2014-02-03 06:50:21.312+0000 INFO  [org.neo4j]: Java classpath:
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcprov-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/activerecord-jdbc-adapter-1.3.5/lib/arjdbc/jdbc/adapter_java.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/zipfs.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/geronimo-jta_1.1_spec-1.1.1.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/sunrsasign.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-lucene-index-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-kernel-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/rt.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-cypher-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/parser.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunpkcs11.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunjce_provider.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/generator.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/server-api-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/resources.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-udc-1.9.5.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/log4j-over-slf4j-1.6.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-cypher-1.8.3.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jsse.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunec.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-jmx-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/scala-library-2.9.1-1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/thread_safe-0.1.3-java/lib/thread_safe/jruby_cache_backend.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-udc-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/lucene-core-3.6.2.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/dnsns.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-kernel-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-shell-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptcore.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/therubyrhino_jar-1.7.4/jar/rhino-1.7R4.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jdbc-sqlite3-3.7.2.1/lib/sqlite-jdbc-3.7.2.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptproviderjdk.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/http_parser.rb-0.6.0-java/lib/ruby_http_parser.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/server-api-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-matching-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/scala-library-2.10.0.jar
+     [classpath + loader.1] file:/root/Aptana_Studio_3/workspace/kvitter/
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jruby-openssl-0.9.4/lib/jopenssl.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-lucene-index-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/lucene-core-3.5.0.jar
+     [bootstrap] /usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcpkix-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-matching-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jfr.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-algo-1.8.3.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/localedata.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-jmx-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-algo-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/charsets.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/classes
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jce.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-core-2.3.0-java/lib/neo4j-core/jars/neo4jrb-adaptor.jar
+2014-02-03 06:50:21.316+0000 INFO  [org.neo4j]: Library path:
+    /usr/jdk/jdk1.7.0_51/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+2014-02-03 06:50:21.316+0000 INFO  [org.neo4j]: System.properties:
+    jruby.home = /usr/local/rvm/rubies/jruby-1.7.10
+    sun.boot.library.path = /usr/jdk/jdk1.7.0_51/jre/lib/amd64
+    path.separator = :
+    file.encoding.pkg = sun.io
+    user.country = US
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = unknown
+    user.dir = /root/Aptana_Studio_3/workspace/kvitter
+    neo4j.ext.udc.source = neo4rb
+    jdk.home = 
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    jffi.boot.library.path = /usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux
+    user.home = /root
+    user.timezone = Asia/Taipei
+    file.encoding = UTF-8
+    jruby.script = jruby
+    user.name = root
+    jruby.shell = /bin/sh
+    sun.java.command = org/jruby/Main script/rails s
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.X11.XToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+2014-02-03 06:50:21.316+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop anticipatory deadline [cfq] 
+    noop anticipatory deadline [cfq] 
+    none
+    none
+2014-02-03 06:50:21.323+0000 INFO  [org.neo4j]: Network information:
+    Interface eth2:
+        address: fe80:0:0:0:a00:27ff:fe9b:d63c%3
+        address: 10.0.3.15
+    Interface eth0:
+        address: fe80:0:0:0:a00:27ff:fe09:ec21%2
+        address: 192.168.56.101
+    Interface lo:
+        address: 0:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2014-02-03 06:50:21.325+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-02-03 06:50:22.078+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=190b)
+2014-02-03 06:50:22.087+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=20b)
+2014-02-03 06:50:22.088+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings] brickCount=0 brickSize=128896b mappedMem=128974848b (storeSize=128b)
+2014-02-03 06:50:22.089+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=304b)
+2014-02-03 06:50:22.091+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-02-03 06:50:22.093+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays] brickCount=0 brickSize=146688b mappedMem=146800640b (storeSize=128b)
+2014-02-03 06:50:22.097+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db] brickCount=0 brickSize=152028b mappedMem=152043520b (storeSize=328b)
+2014-02-03 06:50:22.101+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db] brickCount=0 brickSize=185592b mappedMem=185597952b (storeSize=198b)
+2014-02-03 06:50:22.106+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db] brickCount=0 brickSize=41940b mappedMem=41943040b (storeSize=63b)
+2014-02-03 06:50:22.107+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-02-03 06:50:22.156+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log.1] version=2, lastTxId=11 (clean)
+2014-02-03 06:50:22.199+0000 INFO  [org.neo4j]: TM opening log: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/tm_tx_log.1
+2014-02-03 06:50:22.283+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log.1] version=2, lastTxId=7 (clean)
+2014-02-03 06:50:22.300+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-02-03 06:50:22.300+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1391396207706, id:-3116084349435812522, store version: 13561656364791302]
+2014-02-03 06:50:22.301+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 06:50:22.301+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-02-03 06:50:22.303+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 06:50:22.304+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-02-03 06:50:22.315+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-02-03 06:50:22.317+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2014-02-03 06:50:22.317+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-02-03 06:50:22.317+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-02-03 06:50:22.317+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=7 high=6
+      RelationshipStore: used=6 high=5
+      RelationshipTypeStore: used=4 high=3
+      PropertyStore: used=8 high=7
+      PropertyIndexStore: used=7 high=6
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2014-02-03 06:50:22.318+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-02-03 06:50:22.318+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-02-03 06:50:22.318+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-02-03 06:50:22.319+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-02-03 06:50:22.319+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 16455757824 / 7242809344 / 44
+Storage files: (filename : modification date - size)
+      tm_tx_log.1: 2014-02-03T14:50:22+0800 - 0.00 B
+      neostore.relationshipstore.db: 2014-02-03T14:50:22+0800 - 198.00 B
+      neostore.relationshiptypestore.db.names: 2014-02-03T14:50:22+0800 - 190.00 B
+      neostore: 2014-02-03T14:50:22+0800 - 54.00 B
+      neostore.propertystore.db.index: 2014-02-03T14:50:22+0800 - 63.00 B
+      messages.log: 2014-02-03T14:50:22+0800 - 58.31 kB
+      nioneo_logical.log.v0: 2014-02-03T11:21:08+0800 - 370.00 B
+      neostore.propertystore.db.index.keys.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-02-03T14:50:22+0800 - 304.00 B
+      nioneo_logical.log.v1: 2014-02-03T14:48:50+0800 - 2.88 kB
+      lock: 2014-02-03T14:50:22+0800 - 0.00 B
+      neostore.relationshiptypestore.db: 2014-02-03T14:50:22+0800 - 20.00 B
+      neostore.propertystore.db.arrays.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      index:
+        lucene.log.active: 2014-02-03T14:50:22+0800 - 4.00 B
+        lucene:
+          node:
+            Tag_exact:
+              segments_1: 2014-02-03T14:48:50+0800 - 254.00 B
+              _0.fdx: 2014-02-03T14:48:50+0800 - 12.00 B
+              _0.prx: 2014-02-03T14:48:50+0800 - 2.00 B
+              _0.nrm: 2014-02-03T14:48:50+0800 - 5.00 B
+              _0.fnm: 2014-02-03T14:48:50+0800 - 18.00 B
+              _0.fdt: 2014-02-03T14:48:50+0800 - 15.00 B
+              _0.tis: 2014-02-03T14:48:50+0800 - 40.00 B
+              segments.gen: 2014-02-03T14:48:50+0800 - 20.00 B
+              _0.tii: 2014-02-03T14:48:50+0800 - 35.00 B
+              _0.frq: 2014-02-03T14:48:50+0800 - 2.00 B
+            - Total: 2014-02-03T14:48:50+0800 - 403.00 B
+            Tweet_fulltext:
+              segments_1: 2014-02-03T14:48:50+0800 - 476.00 B
+              _0.fdx: 2014-02-03T14:20:19+0800 - 12.00 B
+              _1.tii: 2014-02-03T14:20:29+0800 - 35.00 B
+              _1.tis: 2014-02-03T14:20:29+0800 - 66.00 B
+              _0.prx: 2014-02-03T14:20:19+0800 - 3.00 B
+              _1.fdx: 2014-02-03T14:20:29+0800 - 12.00 B
+              _0.nrm: 2014-02-03T14:20:19+0800 - 6.00 B
+              _1.fnm: 2014-02-03T14:20:29+0800 - 26.00 B
+              _0.fnm: 2014-02-03T14:20:19+0800 - 26.00 B
+              _0.fdt: 2014-02-03T14:20:19+0800 - 23.00 B
+              _0.tis: 2014-02-03T14:20:19+0800 - 47.00 B
+              _1.nrm: 2014-02-03T14:20:29+0800 - 6.00 B
+              segments.gen: 2014-02-03T14:48:50+0800 - 20.00 B
+              _1.frq: 2014-02-03T14:20:29+0800 - 4.00 B
+              _1.prx: 2014-02-03T14:20:29+0800 - 4.00 B
+              _0.tii: 2014-02-03T14:20:19+0800 - 35.00 B
+              _1.fdt: 2014-02-03T14:20:29+0800 - 37.00 B
+              _0.frq: 2014-02-03T14:20:19+0800 - 3.00 B
+            - Total: 2014-02-03T14:48:50+0800 - 841.00 B
+            Tweet_exact:
+              segments_1: 2014-02-03T14:48:50+0800 - 476.00 B
+              _0.fdx: 2014-02-03T14:20:20+0800 - 12.00 B
+              _1.tii: 2014-02-03T14:48:50+0800 - 35.00 B
+              _1.tis: 2014-02-03T14:48:50+0800 - 244.00 B
+              _0.prx: 2014-02-03T14:20:20+0800 - 2.00 B
+              _1.fdx: 2014-02-03T14:48:50+0800 - 12.00 B
+              _0.nrm: 2014-02-03T14:20:20+0800 - 5.00 B
+              _1.fnm: 2014-02-03T14:48:50+0800 - 28.00 B
+              _0.fnm: 2014-02-03T14:20:20+0800 - 28.00 B
+              _0.fdt: 2014-02-03T14:20:20+0800 - 26.00 B
+              _0.tis: 2014-02-03T14:20:20+0800 - 238.00 B
+              _1.nrm: 2014-02-03T14:48:50+0800 - 5.00 B
+              segments.gen: 2014-02-03T14:48:50+0800 - 20.00 B
+              _1.frq: 2014-02-03T14:48:50+0800 - 18.00 B
+              _1.prx: 2014-02-03T14:48:50+0800 - 2.00 B
+              _0.tii: 2014-02-03T14:20:20+0800 - 35.00 B
+              _1.fdt: 2014-02-03T14:48:50+0800 - 32.00 B
+              _0.frq: 2014-02-03T14:20:20+0800 - 18.00 B
+            - Total: 2014-02-03T14:48:50+0800 - 1.21 kB
+          - Total: 2014-02-03T14:47:17+0800 - 2.42 kB
+        - Total: 2014-02-03T14:19:18+0800 - 2.42 kB
+        lucene.log.1: 2014-02-03T14:50:22+0800 - 16.00 B
+        lucene.log.v1: 2014-02-03T14:48:50+0800 - 1.38 kB
+        lucene.log.v0: 2014-02-03T11:21:08+0800 - 16.00 B
+        lucene-store.db: 2014-02-03T14:48:50+0800 - 40.00 B
+      - Total: 2014-02-03T14:50:22+0800 - 3.87 kB
+      neostore.propertystore.db.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      neostore.propertystore.db.strings: 2014-02-03T14:50:22+0800 - 128.00 B
+      neostore.nodestore.db: 2014-02-03T14:50:22+0800 - 63.00 B
+      nioneo_logical.log.1: 2014-02-03T14:50:22+0800 - 16.00 B
+      neostore.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      neostore.propertystore.db: 2014-02-03T14:50:22+0800 - 328.00 B
+      store_lock: 2014-02-03T10:56:47+0800 - 0.00 B
+      active_tx_log: 2014-02-03T10:56:48+0800 - 11.00 B
+      neostore.propertystore.db.arrays: 2014-02-03T14:50:22+0800 - 128.00 B
+      neostore.relationshiptypestore.db.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      neostore.relationshipstore.db.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      neostore.propertystore.db.index.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      index.db: 2014-02-03T14:47:17+0800 - 349.00 B
+      neostore.nodestore.db.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-02-03T14:50:22+0800 - 9.00 B
+      nioneo_logical.log.active: 2014-02-03T14:50:22+0800 - 4.00 B
+      neostore.propertystore.db.strings.id: 2014-02-03T14:50:22+0800 - 9.00 B
+2014-02-03 06:50:22.350+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-02-03 06:50:22.361+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-02-03 06:50:22.393+0000 INFO  [org.neo4j]: Database is now ready
+2014-02-03 14:31:15.223+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 206ms [total block time: 0.206s]
+2014-02-03 14:31:30.188+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 299ms [total block time: 0.505s]
+2014-02-03 14:31:52.176+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 282ms [total block time: 0.787s]
+2014-02-03 14:46:33.015+0000 INFO  [org.neo4j]: Shutdown started
+2014-02-03 14:46:33.016+0000 INFO  [org.neo4j]: Database is no longer ready
+2014-02-03 14:46:33.017+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2014-02-03 14:46:33.026+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log
+2014-02-03 14:46:33.029+0000 INFO  [org.neo4j]: TM shutting down
+2014-02-03 14:46:33.053+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log
+2014-02-03 14:46:33.076+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names hit=0 miss=8 switches=0 ooe=0
+2014-02-03 14:46:33.088+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db hit=0 miss=4 switches=0 ooe=0
+2014-02-03 14:46:33.099+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-02-03 14:46:33.109+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys hit=0 miss=14 switches=0 ooe=0
+2014-02-03 14:46:33.119+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index hit=0 miss=7 switches=0 ooe=0
+2014-02-03 14:46:33.129+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-03 14:46:33.142+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db hit=1 miss=0 switches=0 ooe=0
+2014-02-03 14:46:33.153+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db hit=6 miss=0 switches=0 ooe=0
+2014-02-03 14:46:33.166+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db hit=7 miss=0 switches=0 ooe=0
+2014-02-03 14:46:33.177+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore hit=0 miss=16 switches=0 ooe=0
+2014-02-03 14:46:33.188+0000 INFO  [org.neo4j]: NeoStore closed
+2014-02-03 14:46:33.188+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2014-02-03 14:46:33.188+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
+2014-02-03 17:28:00.931+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-02-03 17:28:00.934+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=145M
+    neostore.nodestore.db.mapped_memory=40M
+    identity_map=true
+    timestamps=true
+    neostore.relationshipstore.db.mapped_memory=177M
+    neostore.propertystore.db.strings.mapped_memory=123M
+    store_dir=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+    online_backup_enabled=false
+    neostore.propertystore.db.arrays.mapped_memory=140M
+    migration_thread=false
+    enable_rules=true
+    storage_path=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+2014-02-03 17:28:00.957+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2014-02-03 17:28:00.958+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 1.83 GB
+    Free Physical memory: 226.44 MB
+    Committed virtual memory: 1.30 GB
+    Total swap space: 3.94 GB
+    Free swap space: 3.94 GB
+2014-02-03 17:28:00.976+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 15.91 MB
+    Total memory: 97.33 MB
+    Max   memory: 483.38 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=3.75 MB, used=3.66 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=26.94 MB, used=20.06 MB, max=133.38 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=3.31 MB, used=1.62 MB, max=16.63 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=67.08 MB, used=59.75 MB, max=333.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=38.00 MB, used=37.70 MB, max=82.00 MB, threshold=0.00 B
+2014-02-03 17:28:00.989+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.32-431.el6.x86_64; arch: amd64; cpus: 1
+    Max number of file descriptors: 4096
+    Number of open file descriptors: 73
+    Process id: 14107@localhost
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Taipei
+2014-02-03 17:28:05.998+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.51-b03
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Djdk.home=, -Djruby.home=/usr/local/rvm/rubies/jruby-1.7.10, -Djruby.script=jruby, -Djruby.shell=/bin/sh, -Djffi.boot.library.path=/usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux, -Xmx500m, -Xss2048k, -Xbootclasspath/a:/usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar]
+2014-02-03 17:28:05.999+0000 INFO  [org.neo4j]: Java classpath:
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcprov-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/activerecord-jdbc-adapter-1.3.5/lib/arjdbc/jdbc/adapter_java.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/zipfs.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/geronimo-jta_1.1_spec-1.1.1.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/sunrsasign.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-lucene-index-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-kernel-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/rt.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-cypher-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/parser.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunpkcs11.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunjce_provider.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/generator.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/server-api-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/resources.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-udc-1.9.5.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/log4j-over-slf4j-1.6.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-cypher-1.8.3.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jsse.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunec.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-jmx-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/scala-library-2.9.1-1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/thread_safe-0.1.3-java/lib/thread_safe/jruby_cache_backend.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-udc-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/lucene-core-3.6.2.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/dnsns.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-kernel-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-shell-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptcore.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/therubyrhino_jar-1.7.4/jar/rhino-1.7R4.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jdbc-sqlite3-3.7.2.1/lib/sqlite-jdbc-3.7.2.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptproviderjdk.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/http_parser.rb-0.6.0-java/lib/ruby_http_parser.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/server-api-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-matching-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/scala-library-2.10.0.jar
+     [classpath + loader.1] file:/root/Aptana_Studio_3/workspace/kvitter/
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jruby-openssl-0.9.4/lib/jopenssl.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-lucene-index-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/lucene-core-3.5.0.jar
+     [bootstrap] /usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcpkix-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-matching-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jfr.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-algo-1.8.3.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/localedata.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-jmx-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-algo-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/charsets.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/classes
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jce.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-core-2.3.0-java/lib/neo4j-core/jars/neo4jrb-adaptor.jar
+2014-02-03 17:28:06.002+0000 INFO  [org.neo4j]: Library path:
+    /usr/jdk/jdk1.7.0_51/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+2014-02-03 17:28:06.002+0000 INFO  [org.neo4j]: System.properties:
+    jruby.home = /usr/local/rvm/rubies/jruby-1.7.10
+    sun.boot.library.path = /usr/jdk/jdk1.7.0_51/jre/lib/amd64
+    path.separator = :
+    file.encoding.pkg = sun.io
+    user.country = US
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = unknown
+    user.dir = /root/Aptana_Studio_3/workspace/kvitter
+    neo4j.ext.udc.source = neo4rb
+    jdk.home = 
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    jffi.boot.library.path = /usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux
+    user.home = /root
+    user.timezone = Asia/Taipei
+    file.encoding = UTF-8
+    jruby.script = jruby
+    user.name = root
+    jruby.shell = /bin/sh
+    sun.java.command = org/jruby/Main script/rails s
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.X11.XToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+2014-02-03 17:28:06.003+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop anticipatory deadline [cfq] 
+    noop anticipatory deadline [cfq] 
+    none
+    none
+2014-02-03 17:28:06.008+0000 INFO  [org.neo4j]: Network information:
+    Interface eth0:
+        address: fe80:0:0:0:a00:27ff:fe09:ec21%2
+    Interface eth2:
+        address: fe80:0:0:0:a00:27ff:fe9b:d63c%3
+        address: 140.92.53.207
+    Interface lo:
+        address: 0:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2014-02-03 17:28:06.011+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-02-03 17:28:06.861+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=190b)
+2014-02-03 17:28:06.871+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=20b)
+2014-02-03 17:28:06.871+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings] brickCount=0 brickSize=128896b mappedMem=128974848b (storeSize=128b)
+2014-02-03 17:28:06.872+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=304b)
+2014-02-03 17:28:06.878+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-02-03 17:28:06.879+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays] brickCount=0 brickSize=146688b mappedMem=146800640b (storeSize=128b)
+2014-02-03 17:28:06.883+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db] brickCount=0 brickSize=152028b mappedMem=152043520b (storeSize=328b)
+2014-02-03 17:28:06.893+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db] brickCount=0 brickSize=185592b mappedMem=185597952b (storeSize=198b)
+2014-02-03 17:28:06.898+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db] brickCount=0 brickSize=41940b mappedMem=41943040b (storeSize=63b)
+2014-02-03 17:28:06.900+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-02-03 17:28:06.971+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log.1] version=3, lastTxId=11 (clean)
+2014-02-03 17:28:07.004+0000 INFO  [org.neo4j]: TM opening log: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/tm_tx_log.1
+2014-02-03 17:28:07.089+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log.1] version=3, lastTxId=7 (clean)
+2014-02-03 17:28:07.100+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-02-03 17:28:07.101+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1391396207706, id:-3116084349435812522, store version: 13561656364791302]
+2014-02-03 17:28:07.101+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 17:28:07.101+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-02-03 17:28:07.105+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.5
+2014-02-03 17:28:07.106+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-02-03 17:28:07.111+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-02-03 17:28:07.113+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2014-02-03 17:28:07.113+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-02-03 17:28:07.113+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-02-03 17:28:07.113+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=7 high=6
+      RelationshipStore: used=6 high=5
+      RelationshipTypeStore: used=4 high=3
+      PropertyStore: used=8 high=7
+      PropertyIndexStore: used=7 high=6
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2014-02-03 17:28:07.114+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-02-03 17:28:07.114+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-02-03 17:28:07.114+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-02-03 17:28:07.115+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-02-03 17:28:07.115+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 16455757824 / 7240581120 / 44
+Storage files: (filename : modification date - size)
+      tm_tx_log.1: 2014-02-04T01:28:07+0800 - 0.00 B
+      neostore.relationshipstore.db: 2014-02-04T01:28:06+0800 - 198.00 B
+      neostore.relationshiptypestore.db.names: 2014-02-04T01:28:06+0800 - 190.00 B
+      neostore: 2014-02-04T01:28:06+0800 - 54.00 B
+      neostore.propertystore.db.index: 2014-02-04T01:28:06+0800 - 63.00 B
+      messages.log: 2014-02-04T01:28:07+0800 - 81.95 kB
+      nioneo_logical.log.v0: 2014-02-03T11:21:08+0800 - 370.00 B
+      neostore.propertystore.db.index.keys.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-02-04T01:28:06+0800 - 304.00 B
+      nioneo_logical.log.v1: 2014-02-03T14:48:50+0800 - 2.88 kB
+      lock: 2014-02-04T01:28:06+0800 - 0.00 B
+      neostore.relationshiptypestore.db: 2014-02-04T01:28:06+0800 - 20.00 B
+      neostore.propertystore.db.arrays.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      index:
+        lucene.log.active: 2014-02-04T01:28:07+0800 - 4.00 B
+        lucene:
+          node:
+            Tag_exact:
+              segments_1: 2014-02-03T14:48:50+0800 - 254.00 B
+              _0.fdx: 2014-02-03T14:48:50+0800 - 12.00 B
+              _0.prx: 2014-02-03T14:48:50+0800 - 2.00 B
+              _0.nrm: 2014-02-03T14:48:50+0800 - 5.00 B
+              _0.fnm: 2014-02-03T14:48:50+0800 - 18.00 B
+              _0.fdt: 2014-02-03T14:48:50+0800 - 15.00 B
+              _0.tis: 2014-02-03T14:48:50+0800 - 40.00 B
+              segments.gen: 2014-02-03T14:48:50+0800 - 20.00 B
+              _0.tii: 2014-02-03T14:48:50+0800 - 35.00 B
+              _0.frq: 2014-02-03T14:48:50+0800 - 2.00 B
+            - Total: 2014-02-03T14:48:50+0800 - 403.00 B
+            Tweet_fulltext:
+              segments_1: 2014-02-03T14:48:50+0800 - 476.00 B
+              _0.fdx: 2014-02-03T14:20:19+0800 - 12.00 B
+              _1.tii: 2014-02-03T14:20:29+0800 - 35.00 B
+              _1.tis: 2014-02-03T14:20:29+0800 - 66.00 B
+              _0.prx: 2014-02-03T14:20:19+0800 - 3.00 B
+              _1.fdx: 2014-02-03T14:20:29+0800 - 12.00 B
+              _0.nrm: 2014-02-03T14:20:19+0800 - 6.00 B
+              _1.fnm: 2014-02-03T14:20:29+0800 - 26.00 B
+              _0.fnm: 2014-02-03T14:20:19+0800 - 26.00 B
+              _0.fdt: 2014-02-03T14:20:19+0800 - 23.00 B
+              _0.tis: 2014-02-03T14:20:19+0800 - 47.00 B
+              _1.nrm: 2014-02-03T14:20:29+0800 - 6.00 B
+              segments.gen: 2014-02-03T14:48:50+0800 - 20.00 B
+              _1.frq: 2014-02-03T14:20:29+0800 - 4.00 B
+              _1.prx: 2014-02-03T14:20:29+0800 - 4.00 B
+              _0.tii: 2014-02-03T14:20:19+0800 - 35.00 B
+              _1.fdt: 2014-02-03T14:20:29+0800 - 37.00 B
+              _0.frq: 2014-02-03T14:20:19+0800 - 3.00 B
+            - Total: 2014-02-03T14:48:50+0800 - 841.00 B
+            Tweet_exact:
+              segments_1: 2014-02-03T14:48:50+0800 - 476.00 B
+              _0.fdx: 2014-02-03T14:20:20+0800 - 12.00 B
+              _1.tii: 2014-02-03T14:48:50+0800 - 35.00 B
+              _1.tis: 2014-02-03T14:48:50+0800 - 244.00 B
+              _0.prx: 2014-02-03T14:20:20+0800 - 2.00 B
+              _1.fdx: 2014-02-03T14:48:50+0800 - 12.00 B
+              _0.nrm: 2014-02-03T14:20:20+0800 - 5.00 B
+              _1.fnm: 2014-02-03T14:48:50+0800 - 28.00 B
+              _0.fnm: 2014-02-03T14:20:20+0800 - 28.00 B
+              _0.fdt: 2014-02-03T14:20:20+0800 - 26.00 B
+              _0.tis: 2014-02-03T14:20:20+0800 - 238.00 B
+              _1.nrm: 2014-02-03T14:48:50+0800 - 5.00 B
+              segments.gen: 2014-02-03T14:48:50+0800 - 20.00 B
+              _1.frq: 2014-02-03T14:48:50+0800 - 18.00 B
+              _1.prx: 2014-02-03T14:48:50+0800 - 2.00 B
+              _0.tii: 2014-02-03T14:20:20+0800 - 35.00 B
+              _1.fdt: 2014-02-03T14:48:50+0800 - 32.00 B
+              _0.frq: 2014-02-03T14:20:20+0800 - 18.00 B
+            - Total: 2014-02-03T14:48:50+0800 - 1.21 kB
+          - Total: 2014-02-03T14:47:17+0800 - 2.42 kB
+        - Total: 2014-02-03T14:19:18+0800 - 2.42 kB
+        lucene.log.1: 2014-02-04T01:28:07+0800 - 16.00 B
+        lucene.log.v2: 2014-02-03T22:46:33+0800 - 16.00 B
+        lucene.log.v1: 2014-02-03T14:48:50+0800 - 1.38 kB
+        lucene.log.v0: 2014-02-03T11:21:08+0800 - 16.00 B
+        lucene-store.db: 2014-02-03T22:46:33+0800 - 40.00 B
+      - Total: 2014-02-04T01:28:07+0800 - 3.89 kB
+      neostore.propertystore.db.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      neostore.propertystore.db.strings: 2014-02-04T01:28:06+0800 - 128.00 B
+      neostore.nodestore.db: 2014-02-04T01:28:06+0800 - 63.00 B
+      nioneo_logical.log.1: 2014-02-04T01:28:06+0800 - 16.00 B
+      nioneo_logical.log.v2: 2014-02-03T22:46:33+0800 - 16.00 B
+      neostore.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      neostore.propertystore.db: 2014-02-04T01:28:06+0800 - 328.00 B
+      store_lock: 2014-02-03T10:56:47+0800 - 0.00 B
+      active_tx_log: 2014-02-03T10:56:48+0800 - 11.00 B
+      neostore.propertystore.db.arrays: 2014-02-04T01:28:06+0800 - 128.00 B
+      neostore.relationshiptypestore.db.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      neostore.relationshipstore.db.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      neostore.propertystore.db.index.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      index.db: 2014-02-03T14:47:17+0800 - 349.00 B
+      neostore.nodestore.db.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-02-04T01:28:06+0800 - 9.00 B
+      nioneo_logical.log.active: 2014-02-04T01:28:06+0800 - 4.00 B
+      neostore.propertystore.db.strings.id: 2014-02-04T01:28:06+0800 - 9.00 B
+2014-02-03 17:28:07.148+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-02-03 17:28:07.177+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-02-03 17:28:07.217+0000 INFO  [org.neo4j]: Database is now ready
+2014-02-03 17:38:12.753+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 375ms [total block time: 0.375s]
+2014-02-03 17:39:00.941+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 120ms [total block time: 0.495s]
+2014-02-03 18:11:43.639+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 363ms [total block time: 0.858s]
+2014-02-03 20:59:27.090+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 102ms [total block time: 0.96s]
+2014-02-03 21:40:08.594+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 104ms [total block time: 1.064s]
+2014-02-03 21:54:36.600+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 825ms [total block time: 1.889s]
+2014-02-03 22:19:05.894+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 118ms [total block time: 2.007s]
+2014-02-03 23:01:43.603+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 111ms [total block time: 2.118s]
+2014-02-03 23:26:59.569+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 103ms [total block time: 2.221s]
+2014-02-03 23:50:06.222+0000 INFO  [org.neo4j]: Shutdown started
+2014-02-03 23:50:06.224+0000 INFO  [org.neo4j]: Database is no longer ready
+2014-02-03 23:50:06.226+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2014-02-03 23:50:06.469+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log
+2014-02-03 23:50:06.606+0000 INFO  [org.neo4j]: TM shutting down
+2014-02-03 23:50:06.630+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log
+2014-02-03 23:50:06.650+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names hit=0 miss=16 switches=0 ooe=0
+2014-02-03 23:50:06.660+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db hit=0 miss=12 switches=0 ooe=0
+2014-02-03 23:50:06.671+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings hit=269 miss=0 switches=0 ooe=0
+2014-02-03 23:50:06.682+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys hit=0 miss=16 switches=0 ooe=0
+2014-02-03 23:50:06.695+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index hit=0 miss=9 switches=0 ooe=0
+2014-02-03 23:50:06.705+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-03 23:50:06.720+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db hit=3166 miss=0 switches=0 ooe=0
+2014-02-03 23:50:06.732+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db hit=5563 miss=0 switches=0 ooe=0
+2014-02-03 23:50:06.745+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db hit=4947 miss=0 switches=0 ooe=0
+2014-02-03 23:50:06.757+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore hit=0 miss=987 switches=0 ooe=0
+2014-02-03 23:50:06.766+0000 INFO  [org.neo4j]: NeoStore closed
+2014-02-03 23:50:06.766+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2014-02-03 23:50:06.766+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
+2014-02-06 06:25:56.314+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-02-06 06:25:56.324+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=145M
+    neostore.nodestore.db.mapped_memory=40M
+    identity_map=true
+    timestamps=true
+    neostore.relationshipstore.db.mapped_memory=177M
+    neostore.propertystore.db.strings.mapped_memory=123M
+    store_dir=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+    online_backup_enabled=false
+    neostore.propertystore.db.arrays.mapped_memory=140M
+    migration_thread=false
+    enable_rules=true
+    storage_path=/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development
+2014-02-06 06:25:56.366+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2014-02-06 06:25:56.383+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 1.83 GB
+    Free Physical memory: 419.82 MB
+    Committed virtual memory: 1.30 GB
+    Total swap space: 3.94 GB
+    Free swap space: 3.94 GB
+2014-02-06 06:25:56.421+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 28.85 MB
+    Total memory: 99.55 MB
+    Max   memory: 483.38 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=3.75 MB, used=3.65 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=27.56 MB, used=6.97 MB, max=133.38 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=3.38 MB, used=3.38 MB, max=16.63 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=68.61 MB, used=60.36 MB, max=333.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=37.94 MB, used=37.91 MB, max=82.00 MB, threshold=0.00 B
+2014-02-06 06:25:56.471+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 2.6.32-431.el6.x86_64; arch: amd64; cpus: 1
+    Max number of file descriptors: 4096
+    Number of open file descriptors: 73
+    Process id: 4421@localhost
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Asia/Taipei
+2014-02-06 06:25:56.487+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.51-b03
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Djdk.home=, -Djruby.home=/usr/local/rvm/rubies/jruby-1.7.10, -Djruby.script=jruby, -Djruby.shell=/bin/sh, -Djffi.boot.library.path=/usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux, -Xmx500m, -Xss2048k, -Xbootclasspath/a:/usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar]
+2014-02-06 06:25:56.495+0000 INFO  [org.neo4j]: Java classpath:
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcprov-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/activerecord-jdbc-adapter-1.3.5/lib/arjdbc/jdbc/adapter_java.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/zipfs.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/geronimo-jta_1.1_spec-1.1.1.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/sunrsasign.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-lucene-index-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-kernel-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/rt.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-cypher-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/parser.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunpkcs11.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunjce_provider.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/json-1.8.1-java/lib/json/ext/generator.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/server-api-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/resources.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-udc-1.9.5.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/log4j-over-slf4j-1.6.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-cypher-1.8.3.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jsse.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/sunec.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-jmx-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/scala-library-2.9.1-1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/thread_safe-0.1.3-java/lib/thread_safe/jruby_cache_backend.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-udc-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/lucene-core-3.6.2.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/dnsns.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-kernel-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-shell-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptcore.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/therubyrhino_jar-1.7.4/jar/rhino-1.7R4.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jdbc-sqlite3-3.7.2.1/lib/sqlite-jdbc-3.7.2.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/kryptproviderjdk.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/http_parser.rb-0.6.0-java/lib/ruby_http_parser.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/server-api-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-matching-1.8.3.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/scala-library-2.10.0.jar
+     [classpath + loader.1] file:/root/Aptana_Studio_3/workspace/kvitter/
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/jruby-openssl-0.9.4/lib/jopenssl.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-lucene-index-1.8.3.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/lucene-core-3.5.0.jar
+     [bootstrap] /usr/local/rvm/rubies/jruby-1.7.10/lib/jruby.jar
+     [loader.0] file:/usr/local/rvm/rubies/jruby-1.7.10/lib/ruby/shared/bcpkix-jdk15on-1.47.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-matching-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jfr.jar
+     [loader.0] file:/root/Aptana_Studio_3/workspace/kvitter/lib/neo4j-graph-algo-1.8.3.jar
+     [loader.2] file:/usr/jdk/jdk1.7.0_51/jre/lib/ext/localedata.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-jmx-1.9.5.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-community-1.9.5-java/lib/neo4j-community/jars/neo4j-graph-algo-1.9.5.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/charsets.jar
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/classes
+     [bootstrap] /usr/jdk/jdk1.7.0_51/jre/lib/jce.jar
+     [loader.0] file:/usr/local/rvm/gems/jruby-1.7.10@rails320/gems/neo4j-core-2.3.0-java/lib/neo4j-core/jars/neo4jrb-adaptor.jar
+2014-02-06 06:25:56.501+0000 INFO  [org.neo4j]: Library path:
+    /usr/jdk/jdk1.7.0_51/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+2014-02-06 06:25:56.501+0000 INFO  [org.neo4j]: System.properties:
+    jruby.home = /usr/local/rvm/rubies/jruby-1.7.10
+    sun.boot.library.path = /usr/jdk/jdk1.7.0_51/jre/lib/amd64
+    path.separator = :
+    file.encoding.pkg = sun.io
+    user.country = US
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = unknown
+    user.dir = /root/Aptana_Studio_3/workspace/kvitter
+    neo4j.ext.udc.source = neo4rb
+    jdk.home = 
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    jffi.boot.library.path = /usr/local/rvm/rubies/jruby-1.7.10/lib/jni:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/x86_64-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/arm-Linux:/usr/local/rvm/rubies/jruby-1.7.10/lib/jni/i386-Linux
+    user.home = /root
+    user.timezone = Asia/Taipei
+    file.encoding = UTF-8
+    jruby.script = jruby
+    user.name = root
+    jruby.shell = /bin/sh
+    sun.java.command = org/jruby/Main script/rails s
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.X11.XToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+2014-02-06 06:25:56.501+0000 INFO  [org.neo4j]: Linux scheduler information:
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    noop anticipatory deadline [cfq] 
+    noop anticipatory deadline [cfq] 
+    none
+    none
+2014-02-06 06:25:56.515+0000 INFO  [org.neo4j]: Network information:
+    Interface eth0:
+        address: fe80:0:0:0:a00:27ff:fe09:ec21%2
+    Interface rename3:
+        address: fe80:0:0:0:a00:27ff:fe9b:d63c%3
+        address: 140.92.53.207
+    Interface lo:
+        address: 0:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2014-02-06 06:25:56.518+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-02-06 06:25:57.867+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=494b)
+2014-02-06 06:25:57.931+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=60b)
+2014-02-06 06:25:57.959+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings] brickCount=0 brickSize=128896b mappedMem=128974848b (storeSize=34560b)
+2014-02-06 06:25:57.961+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=380b)
+2014-02-06 06:25:57.975+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=81b)
+2014-02-06 06:25:57.980+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays] brickCount=0 brickSize=146688b mappedMem=146800640b (storeSize=128b)
+2014-02-06 06:25:58.007+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db] brickCount=0 brickSize=152028b mappedMem=152043520b (storeSize=88519b)
+2014-02-06 06:25:58.023+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db] brickCount=0 brickSize=185592b mappedMem=185597952b (storeSize=56727b)
+2014-02-06 06:25:58.046+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db] brickCount=0 brickSize=41940b mappedMem=41943040b (storeSize=5670b)
+2014-02-06 06:25:58.049+0000 INFO  [org.neo4j]: [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2014-02-06 06:25:58.262+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log.1] version=4, lastTxId=982 (clean)
+2014-02-06 06:25:58.410+0000 INFO  [org.neo4j]: TM opening log: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/tm_tx_log.1
+2014-02-06 06:25:58.801+0000 INFO  [org.neo4j]: Opened logical log [/root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log.1] version=4, lastTxId=973 (clean)
+2014-02-06 06:25:58.840+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-02-06 06:25:58.840+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1391396207706, id:-3116084349435812522, store version: 13561656364791302]
+2014-02-06 06:25:58.840+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.5
+2014-02-06 06:25:58.841+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-02-06 06:25:58.845+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.5
+2014-02-06 06:25:58.845+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-02-06 06:25:58.871+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-02-06 06:25:58.879+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2014-02-06 06:25:58.879+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-02-06 06:25:58.879+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-02-06 06:25:58.879+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=630 high=629
+      RelationshipStore: used=1719 high=1718
+      RelationshipTypeStore: used=12 high=11
+      PropertyStore: used=2159 high=2158
+      PropertyIndexStore: used=9 high=8
+      StringPropertyStore: used=270 high=269
+      ArrayPropertyStore: used=1 high=0
+2014-02-06 06:25:58.879+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-02-06 06:25:58.879+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-02-06 06:25:58.880+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-02-06 06:25:58.880+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-02-06 06:25:58.880+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 16455757824 / 7234723840 / 43
+Storage files: (filename : modification date - size)
+      tm_tx_log.1: 2014-02-06T14:25:58+0800 - 0.00 B
+      neostore.relationshipstore.db: 2014-02-06T14:25:58+0800 - 55.40 kB
+      neostore.relationshiptypestore.db.names: 2014-02-06T14:25:57+0800 - 494.00 B
+      neostore: 2014-02-06T14:25:58+0800 - 54.00 B
+      neostore.propertystore.db.index: 2014-02-06T14:25:57+0800 - 81.00 B
+      messages.log: 2014-02-06T14:25:58+0800 - 106.57 kB
+      nioneo_logical.log.v0: 2014-02-03T11:21:08+0800 - 370.00 B
+      neostore.propertystore.db.index.keys.id: 2014-02-06T14:25:57+0800 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-02-06T14:25:57+0800 - 380.00 B
+      nioneo_logical.log.v1: 2014-02-03T14:48:50+0800 - 2.88 kB
+      lock: 2014-02-06T14:25:58+0800 - 0.00 B
+      neostore.relationshiptypestore.db: 2014-02-06T14:25:57+0800 - 60.00 B
+      neostore.propertystore.db.arrays.id: 2014-02-06T14:25:57+0800 - 9.00 B
+      index:
+        lucene.log.active: 2014-02-06T14:25:58+0800 - 4.00 B
+        lucene:
+          node:
+            User_exact:
+              _2v.cfs: 2014-02-04T05:55:00+0800 - 296.00 B
+              segments_1: 2014-02-04T07:50:06+0800 - 1.16 kB
+              _2s.prx: 2014-02-04T05:54:52+0800 - 273.00 B
+              _2s.fdx: 2014-02-04T05:54:52+0800 - 732.00 B
+              _2s.fnm: 2014-02-04T05:54:52+0800 - 18.00 B
+              _2u.cfs: 2014-02-04T05:55:00+0800 - 287.00 B
+              _2s.frq: 2014-02-04T05:54:52+0800 - 327.00 B
+              _2s.fdt: 2014-02-04T05:54:52+0800 - 3.57 kB
+              _2s.tii: 2014-02-04T05:54:52+0800 - 57.00 B
+              _2t.cfs: 2014-02-04T05:54:55+0800 - 263.00 B
+              _2w.cfs: 2014-02-04T07:50:06+0800 - 278.00 B
+              _2s.tis: 2014-02-04T05:54:52+0800 - 2.21 kB
+              _2s.nrm: 2014-02-04T05:54:52+0800 - 95.00 B
+              segments.gen: 2014-02-04T07:50:06+0800 - 20.00 B
+            - Total: 2014-02-04T07:50:06+0800 - 9.52 kB
+            Link_exact:
+              segments_1: 2014-02-04T07:50:06+0800 - 962.00 B
+              _3f.cfs: 2014-02-04T05:55:00+0800 - 351.00 B
+              _3d.cfs: 2014-02-04T05:54:57+0800 - 351.00 B
+              _3c.tis: 2014-02-04T05:54:57+0800 - 8.46 kB
+              _3c.fdx: 2014-02-04T05:54:57+0800 - 1.96 kB
+              _3c.nrm: 2014-02-04T05:54:57+0800 - 254.00 B
+              _3c.fdt: 2014-02-04T05:54:57+0800 - 11.61 kB
+              _3e.cfs: 2014-02-04T05:54:59+0800 - 598.00 B
+              _3c.fnm: 2014-02-04T05:54:57+0800 - 17.00 B
+              segments.gen: 2014-02-04T07:50:06+0800 - 20.00 B
+              _3c.tii: 2014-02-04T05:54:57+0800 - 103.00 B
+              _3c.frq: 2014-02-04T05:54:57+0800 - 872.00 B
+              _3c.prx: 2014-02-04T05:54:57+0800 - 500.00 B
+            - Total: 2014-02-04T07:50:06+0800 - 25.96 kB
+            Tag_exact:
+              _3w.nrm: 2014-02-04T05:55:00+0800 - 131.00 B
+              _3w.fdx: 2014-02-04T05:55:00+0800 - 1020.00 B
+              _3w.frq: 2014-02-04T05:55:00+0800 - 506.00 B
+              segments_2: 2014-02-04T07:50:06+0800 - 516.00 B
+              _3w.tis: 2014-02-04T05:55:00+0800 - 2.50 kB
+              _3x.cfs: 2014-02-04T07:50:06+0800 - 854.00 B
+              _3w.fdt: 2014-02-04T05:55:00+0800 - 67.50 kB
+              _3w.fnm: 2014-02-04T05:55:00+0800 - 18.00 B
+              _3w.tii: 2014-02-04T05:55:00+0800 - 58.00 B
+              segments.gen: 2014-02-04T07:50:06+0800 - 20.00 B
+              _3w.prx: 2014-02-04T05:55:00+0800 - 5.91 kB
+            - Total: 2014-02-04T07:50:06+0800 - 78.95 kB
+            Tweet_fulltext:
+              _4g.fdt: 2014-02-04T06:00:04+0800 - 764.09 kB
+              _4g.prx: 2014-02-04T06:00:04+0800 - 47.73 kB
+              segments_2: 2014-02-04T07:50:06+0800 - 293.00 B
+              _4g.fdx: 2014-02-04T06:00:04+0800 - 1.14 kB
+              _4g.tii: 2014-02-04T06:00:04+0800 - 345.00 B
+              _4g.tis: 2014-02-04T06:00:04+0800 - 25.20 kB
+              _4g.nrm: 2014-02-04T06:00:04+0800 - 294.00 B
+              segments.gen: 2014-02-04T07:50:06+0800 - 20.00 B
+              _4g.frq: 2014-02-04T06:00:04+0800 - 4.45 kB
+              _4g.fnm: 2014-02-04T06:00:04+0800 - 26.00 B
+            - Total: 2014-02-04T07:50:06+0800 - 843.56 kB
+            Tweet_exact:
+              _4g.fdt: 2014-02-04T07:50:06+0800 - 36.86 kB
+              _4g.prx: 2014-02-04T07:50:06+0800 - 147.00 B
+              _4g.fdx: 2014-02-04T07:50:06+0800 - 1.14 kB
+              _4g.tii: 2014-02-04T07:50:06+0800 - 66.00 B
+              _4g.tis: 2014-02-04T07:50:06+0800 - 2.46 kB
+              segments_3: 2014-02-04T07:50:06+0800 - 293.00 B
+              _4g.nrm: 2014-02-04T07:50:06+0800 - 149.00 B
+              segments.gen: 2014-02-04T07:50:06+0800 - 20.00 B
+              _4g.frq: 2014-02-04T07:50:06+0800 - 2.86 kB
+              _4g.fnm: 2014-02-04T07:50:06+0800 - 28.00 B
+            - Total: 2014-02-04T07:50:06+0800 - 44.00 kB
+          - Total: 2014-02-04T05:53:26+0800 - 1002.00 kB
+          relationship:
+            Neo4j_Rails_Relationship_exact:
+              _ic.prx: 2014-02-04T07:50:06+0800 - 4.26 kB
+              _ic.fnm: 2014-02-04T07:50:06+0800 - 56.00 B
+              segments_2: 2014-02-04T07:50:06+0800 - 293.00 B
+              _ic.fdt: 2014-02-04T07:50:06+0800 - 50.83 kB
+              _ic.tii: 2014-02-04T07:50:06+0800 - 218.00 B
+              _ic.frq: 2014-02-04T07:50:06+0800 - 6.30 kB
+              _ic.fdx: 2014-02-04T07:50:06+0800 - 8.52 kB
+              segments.gen: 2014-02-04T07:50:06+0800 - 20.00 B
+              _ic.tis: 2014-02-04T07:50:06+0800 - 12.91 kB
+              _ic.nrm: 2014-02-04T07:50:06+0800 - 3.20 kB
+            - Total: 2014-02-04T07:50:06+0800 - 86.60 kB
+          - Total: 2014-02-04T05:53:26+0800 - 86.60 kB
+        - Total: 2014-02-04T05:53:26+0800 - 1.06 MB
+        lucene.log.1: 2014-02-06T14:25:58+0800 - 16.00 B
+        lucene.log.v2: 2014-02-03T22:46:33+0800 - 16.00 B
+        lucene.log.v1: 2014-02-03T14:48:50+0800 - 1.38 kB
+        lucene.log.v0: 2014-02-03T11:21:08+0800 - 16.00 B
+        lucene-store.db: 2014-02-04T07:50:06+0800 - 40.00 B
+        lucene.log.v3: 2014-02-04T07:50:06+0800 - 1.88 MB
+      - Total: 2014-02-06T14:25:58+0800 - 2.95 MB
+      nioneo_logical.log.v3: 2014-02-04T07:50:06+0800 - 639.14 kB
+      neostore.propertystore.db.id: 2014-02-06T14:25:58+0800 - 9.00 B
+      neostore.propertystore.db.strings: 2014-02-06T14:25:57+0800 - 33.75 kB
+      neostore.nodestore.db: 2014-02-06T14:25:58+0800 - 5.54 kB
+      nioneo_logical.log.1: 2014-02-06T14:25:58+0800 - 16.00 B
+      nioneo_logical.log.v2: 2014-02-03T22:46:33+0800 - 16.00 B
+      neostore.id: 2014-02-06T14:25:58+0800 - 9.00 B
+      neostore.propertystore.db: 2014-02-06T14:25:58+0800 - 86.44 kB
+      store_lock: 2014-02-03T10:56:47+0800 - 0.00 B
+      active_tx_log: 2014-02-04T05:54:46+0800 - 11.00 B
+      neostore.propertystore.db.arrays: 2014-02-06T14:25:57+0800 - 128.00 B
+      neostore.relationshiptypestore.db.id: 2014-02-06T14:25:57+0800 - 9.00 B
+      neostore.relationshipstore.db.id: 2014-02-06T14:25:58+0800 - 9.00 B
+      neostore.propertystore.db.index.id: 2014-02-06T14:25:57+0800 - 9.00 B
+      index.db: 2014-02-04T05:53:26+0800 - 659.00 B
+      neostore.nodestore.db.id: 2014-02-06T14:25:58+0800 - 9.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-02-06T14:25:57+0800 - 9.00 B
+      nioneo_logical.log.active: 2014-02-06T14:25:58+0800 - 4.00 B
+      neostore.propertystore.db.strings.id: 2014-02-06T14:25:57+0800 - 9.00 B
+      tm_tx_log.2: 2014-02-04T05:54:46+0800 - 29.13 kB
+2014-02-06 06:25:58.993+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-02-06 06:25:59.018+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-02-06 06:25:59.068+0000 INFO  [org.neo4j]: Database is now ready
+2014-02-06 06:26:10.489+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 136ms [total block time: 0.136s]
+2014-02-06 06:26:18.573+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 232ms [total block time: 0.368s]
+2014-02-06 06:28:13.672+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 105ms [total block time: 0.473s]
+2014-02-06 07:18:10.585+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 137ms [total block time: 0.61s]
+2014-02-06 07:55:45.624+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 489ms [total block time: 1.099s]
+2014-02-06 07:56:01.530+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 457ms [total block time: 1.556s]
+2014-02-06 08:02:56.535+0000 INFO  [org.neo4j]: Shutdown started
+2014-02-06 08:02:56.537+0000 INFO  [org.neo4j]: Database is no longer ready
+2014-02-06 08:02:56.537+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2014-02-06 08:02:56.764+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/index/lucene.log
+2014-02-06 08:02:56.777+0000 INFO  [org.neo4j]: TM shutting down
+2014-02-06 08:02:56.798+0000 INFO  [org.neo4j]: Closed log /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/nioneo_logical.log
+2014-02-06 08:02:56.851+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db.names hit=0 miss=24 switches=0 ooe=0
+2014-02-06 08:02:56.864+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshiptypestore.db hit=0 miss=12 switches=0 ooe=0
+2014-02-06 08:02:56.878+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.strings hit=368 miss=0 switches=0 ooe=0
+2014-02-06 08:02:56.926+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index.keys hit=0 miss=18 switches=0 ooe=0
+2014-02-06 08:02:56.934+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.index hit=0 miss=9 switches=0 ooe=0
+2014-02-06 08:02:56.944+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-06 08:02:56.959+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.propertystore.db hit=1275 miss=0 switches=0 ooe=0
+2014-02-06 08:02:56.972+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.relationshipstore.db hit=1651 miss=0 switches=0 ooe=0
+2014-02-06 08:02:57.026+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore.nodestore.db hit=1463 miss=0 switches=0 ooe=0
+2014-02-06 08:02:57.051+0000 INFO  [org.neo4j]: /root/Aptana_Studio_3/workspace/kvitter/db/neo4j-development/neostore hit=0 miss=137 switches=0 ooe=0
+2014-02-06 08:02:57.062+0000 INFO  [org.neo4j]: NeoStore closed
+2014-02-06 08:02:57.062+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2014-02-06 08:02:57.062+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
